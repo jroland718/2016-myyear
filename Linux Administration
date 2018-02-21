@@ -1,1 +1,18 @@
 skills 7
+
+
+#memory
+free -h
+
+# directory health
+df-h
+
+#list everything on screen
+du
+
+#show less
+du | less
+
+
+
+https://www.youtube.com/watch?v=4_21KZ3qKEI
