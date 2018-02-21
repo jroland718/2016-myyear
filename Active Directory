@@ -4,3 +4,11 @@ scripting skills 7
 #Create User in Powershell
 New-ADUser "Username"  -UserPrincipalName "user@mydomain.com"
 
+#Create Password
+Set-ADAccountPassword -Identity "username"
+
+#Enable Account
+Enable-ADAccount -Identity "username"
+
+#Check Properties
+Get-AdUser "username" -Properties enabled
