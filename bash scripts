@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#Update Script
+echo "Update started at:" > /home/john/.update.log
+date >> /home/john/.update.log
+echo "Checking for updates ..."
+sudo apt-get update 2>> /home/john/.update.log >> /home/john/.update.log
+echo "Installing updates..."
+sudo apt-get dist-upgrade -yy 2>> /home/john/.update.log >> /home/john/.update.log
+echo "Removing orphaned packages..."
+sudo apt-get autoremove -yy 2>> /home/john/.update.log >>/home/john/.update.log
+echo "Clearing apt cache"
+sudo apt-get clean 2>> /home/john/.update.log >> /home/john/.update.log
+echo "Complete!" | tee -a /home/john/.update.log
+echo "System will restart in 30 seconds."
+sleep 30
+sudo reboot
