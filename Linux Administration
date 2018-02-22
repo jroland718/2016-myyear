@@ -13,6 +13,62 @@ du
 #show less
 du | less
 
+#gives list of all actions linux kernel done recently and display last 10
+dmesg | tail  
+
+#last 10 things in system log
+tail /var/log/syslog
+
+#puts syslog in text
+tail /var/log/syslog > logtail.txt
+
+#systemd gives full content of journal
+journalctl 
+
+#list processes
+top
+
+#process viewer
+htop
+
+#kills program
+killall (program name)
+
+#list partitions
+lsblk
+
+#mount drive
+sudo mount /dev/sda2 /mnt
+
+#unmount drive
+sudo unmount /dev/sda2 
+
+#detailed info for hard drives
+sudo fdisk -l
+
+#gives UUID for drives
+sudo blkid
+
+#gives hostname and kernel
+uname -a
+
+#gives history from beginning
+history | less
+
+#calculator
+cal
+
+#checks for defrag
+sudo e4defrag /home -c
+
+
+
+
+
+
+
+
+
 
 
 https://www.youtube.com/watch?v=4_21KZ3qKEI
